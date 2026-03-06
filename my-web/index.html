@@ -1,0 +1,1389 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+  <meta http-equiv="Expires" content="Fri, 31 Dec 9999 23:59:59 GMT" />
+  <meta http-equiv="Pragma" content="cache" />
+  <title> 余丞写给杨桃的彩蛋（by-名字真难起）</title>
+  <style>
+:root{--bg:#1a1a2e;--ink:#f0f0f0;--muted:#a0a0a0;--accent:#4ade80;--pink:#f472b6;--warn:#facc15;--danger:#eb6565;--warm:#fbbf24;--sky:#93c5fd;--earth:#d97706;}*{box-sizing:border-box;
+}.scene img, .scene svg, .bubble{image-rendering:pixelated;image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:crisp-edges;}body{margin:0;font-family:'Courier New',monospace;
+background:linear-gradient(180deg,#1a1a2e 0%,#16213e 100%);color:var(--ink);letter-spacing:-0.5px;
+  /* 防止选择、复制和拖拽 */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}.wrap{max-width:980px;margin:0 auto;padding:14px 12px 22px;}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:6px 2px 
+}.title{font-weight:900;letter-spacing:.5px;font-size:18px;color:var(--warm);}.sub{color:var(--muted);font-size:12px;line-height:1.4;
+}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:12px;}@media(max-width:920px){.grid{grid-template-columns:1fr;}
+}.card{background:#1e293b;border:3px solid #334155;box-shadow:3px 3px 0 rgba(0,0,0,.4);overflow:hidden;position:relative;border-radius:4px;
+}.pad{padding:12px;}.scene{position:relative;border-bottom:3px solid #334155;height:260px;overflow:hidden;background:#0b0f14;box-shadow:inset 0 0 0 2px rgba(0,0,0,.2);
+}.scene svg{width:100%;height:100%;display:block;opacity:.98;}.hud{position:absolute;left:10px;top:10px;display:flex;gap:8px;flex-wrap:wrap;pointer-events:none;z-index:5;
+}.badge{pointer-events:none;font-size:12px;color:var(--ink);padding:4px 8px;border:2px solid var(--warm);background:#1e293b;font-weight:bold;border-radius:2px;
+}.badge strong{color:var(--warm);font-weight:bold;}.badge.hint{border-color:var(--accent);background:var(--accent);color:#1e293b;animation:pulse 2s infinite;}@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.7;}
+}.hotspots{position:absolute;inset:0;z-index:4;}.spot{position:absolute;border:2px solid var(--accent);background:#1e293b;display:flex;align-items:center;justify-content:center;color:var(--ink);font-size:10px;font-weight:bold;
+cursor:pointer;user-select:none;transition:all .1s ease;-webkit-tap-highlight-color:transparent;padding:3px;text-align:center;white-space:nowrap;min-width:65px;height:26px;box-shadow:1px 1px 0 rgba(0,0,0,.4);
+border-radius:2px;}.spot:hover{background:var(--accent);color:#1e293b;transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(0,0,0,.4);}.spot:active{transform:translate(2px,2px);box-shadow:0 0 0 rgba(0,0,0,.4);
+}.spot.hidden{display:none;}.spot.current{background:var(--warm);color:#1e293b;animation:pulse 1.5s infinite;}.bar{height:12px;background:#1e293b;overflow:hidden;margin-top:10px;border:2px solid #334155;border-radius:2px;
+}.bar i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--warm));transition:width .35s ease;border-radius:1px;}.chapter{display:inline-flex;gap:8px;
+align-items:center;margin:10px 0 8px;padding:4px 8px;border:2px solid var(--warm);background:#1e293b;font-weight:bold;font-size:13px;color:var(--warm);border-radius:2px;}.chapter small{color:var(--ink);font-weight:bold;
+}.dialog{min-height:170px;max-height:230px;border:2px solid #334155;background:#1e293b;border-radius:2px;position:relative;}.dialog-inner{padding:12px 115px 12px 12px;line-height:1.6;font-size:14px;
+white-space:pre-wrap;overflow-y:auto;max-height:230px;height:100%;scrollbar-width:thin;scrollbar-color:#334155 #1e293b;}.dialog::after{content:'';position:absolute;bottom:12px;right:12px;width:110px;
+height:110px;background-size:contain;background-repeat:no-repeat;background-position:center;image-rendering:pixelated;image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:crisp-edges;z-index:1;
+}.dialog.other::after{background-image:url('images/unnamed1.jpg');}.dialog.yucong::after{background-image:url('images/unnamed2.jpg');}.dialog::-webkit-scrollbar{width:8px;}.dialog::-webkit-scrollbar-track{background:#0b0f14;
+}.dialog::-webkit-scrollbar-thumb{background:#1e293b;border:2px solid #0b0f14;}.dialog::-webkit-scrollbar-thumb:hover{background:var(--accent);}.row{display:flex;gap:10px;margin-top:10px;
+}button{border:2px solid #334155;background:#1e293b;color:var(--ink);padding:10px;font-size:14px;cursor:pointer;transition:all .1s ease;-webkit-tap-highlight-color:transparent;font-weight:bold;box-shadow:2px 2px 0 rgba(0,0,0,.4);
+border-radius:2px;}button:active{transform:translate(2px,2px);box-shadow:0 0 0 rgba(0,0,0,.4);}button.primary{background:#6ee7b7;color:#1e293b;border-color:#34d399;}button.primary:active{background:#34d399;border-color:#34d399;
+}button.danger{background:#ef4444;color:#1e293b;border-color:#ef4444;}button.danger:active{background:#dc2626;border-color:#dc2626;}button.ghost{background:#475569;color:var(--ink);border-color:#60a5fa;
+}button.ghost:active{background:#3b82f6;border-color:#3b82f6;}.row button{flex:1;}.input{display:flex;gap:10px;margin-top:10px;border:2px solid #334155;background:#1e293b;border-radius:2px;
+}input{flex:1;border:0;outline:none;background:transparent;color:var(--ink);font-size:14px;font-family:monospace;padding:10px;}input::placeholder{color:var(--muted);}.hint{color:var(--muted);font-size:12px;margin-top:8px;
+line-height:1.5;font-family:monospace;}.panelTitle{font-weight:bold;margin:0 0 8px;font-size:14px;color:var(--warm);}.box{border:2px solid #334155;background:#1e293b;padding:10px;margin-bottom:12px;border-radius:2px;
+}.kv{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px;line-height:1.6;}.kv strong{color:var(--ink);font-weight:bold;}.pillRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;
+}.pill{font-size:12px;padding:6px 10px;border:2px solid #334155;background:#1e293b;color:var(--ink);cursor:pointer;user-select:none;font-weight:bold;box-shadow:2px 2px 0 rgba(0,0,0,.4);transition:all .1s ease;border-radius:2px;
+}.pill:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(0,0,0,.4);}.divider{height:2px;background:#334155;margin:10px 0;}.small{font-size:12px;color:var(--muted);font-family:monospace;
+}.task{display:flex;gap:10px;align-items:flex-start;padding:8px 6px;border:2px solid #334155;background:#1e293b;margin-bottom:8px;border-radius:2px;transition:all .3s ease;
+}.task.current{border-color:var(--warm);background:#334155;box-shadow:0 0 0 2px rgba(250, 202, 21, 0.3);}.task.done{background:#334155;border-color:var(--accent);opacity:0.7;
+}.task .tname{font-size:13px;font-weight:bold;color:var(--warm);}.task.current .tname{color:var(--accent);}.task .tdesc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4;
+}.task.current .tdesc{color:var(--ink);}.task .progress{font-size:11px;color:var(--accent);margin-top:2px;}.check{width:18px;height:18px;border:2px solid #334155;background:#1e293b;display:flex;align-items:center;justify-content:center;
+margin-top:1px;flex:0 0 18px;border-radius:2px;}.task.done .check{border-color:var(--accent);background:var(--accent);}.check span{font-size:12px;opacity:.0;}.task.done .check span{opacity:1;}.npcRow{display:flex;gap:10px;flex-wrap:wrap;
+}.npcBtn{width:calc(33.33% - 6.7px);min-width:110px;display:flex;gap:10px;align-items:center;padding:10px;border:2px solid #334155;background:#1e293b;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
+box-shadow:2px 2px 0 rgba(0,0,0,.4);transition:all .1s ease;border-radius:2px;}.npcBtn:hover{border-color:var(--warm);}.npcBtn:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(0,0,0,.4);
+}.npcBtn.locked{opacity:.55;cursor:not-allowed;}.avatar{width:36px;height:36px;border:2px solid #334155;background:#1e293b;display:flex;align-items:center;justify-content:center;font-size:18px;flex:0 0 36px;border-radius:2px;
+}.npcMeta{min-width:0;}.npcMeta b{display:block;font-size:13px;font-weight:bold;}.npcMeta span{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+}.overlay{position:fixed;inset:0;pointer-events:none;z-index:200;}.bubble{position:absolute;bottom:-30px;animation:floatUp 2.9s ease-in forwards;opacity:.95;font-size:18px;image-rendering:pixelated
+}@keyframes floatUp{0%{transform:translateY(0) scale(.9);opacity:0;}12%{opacity:1;}100%{transform:translateY(-300px) scale(1.15);opacity:0;}}.banner{position:absolute;left:50%;top:14px;transform:translateX(-50%);
+padding:10px 14px;border:2px solid var(--pink);background:#0b0f14;color:var(--ink);font-weight:bold;letter-spacing:.5px;display:none;z-index:6;box-shadow:3px 3px 0 rgba(0,0,0,.5);}.fade{position:absolute;inset:0;background:rgba(0,0,0,0);
+transition:background .85s ease;pointer-events:none;z-index:2;}.toast{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);padding:10px 12px;border:2px solid #1e293b;background:#0b0f14;color:var(--ink);
+font-size:13px;opacity:0;transition:opacity .25s ease,transform .25s ease;max-width:92%;text-align:center;z-index:7;box-shadow:3px 3px 0 rgba(0,0,0,.5);}.toast.show{opacity:1;transform:translateX(-50%) translateY(-6px);
+}.toast.hint{background:var(--accent);color:#1e293b;border-color:var(--accent);animation:pulse 1s infinite;}.modalBack{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:20;
+padding:14px;overflow:auto;}.modal{width:min(520px,95%);max-height:90vh;overflow-y:auto;border:3px solid #334155;background:#1e293b;box-shadow:4px 4px 0 rgba(0,0,0,.4);padding:14px;border-radius:3px;
+}.modal h4{margin:0 0 6px;font-size:15px;font-weight:950;}.modal p{margin:0 0 10px;color:var(--muted);font-size:12px;line-height:1.5;}.modal .opt{display:flex;flex-direction:column;gap:8px;}.opt button{width:100%;text-align:left;
+}.opt button b{display:block;font-size:14px;}.opt button span{display:block;color:#0f172a;font-size:12px;margin-top:2px;}
+  </style>
+<!-- Only preload the first scene image and audio, other images will be lazy loaded -->
+  <link rel="preload" href="images/1.png" as="image">
+  <link rel="preload" href="images/tianyang - April Encounter (Fingerstyle Ver.) (1).mp3" as="audio">
+</head>
+<body>
+<audio id='bgm' autoplay loop style='display:none;'><source src='images/tianyang - April Encounter (Fingerstyle Ver.) (1).mp3' type='audio/mpeg'></audio>
+
+<!-- Music play prompt with game instructions -->
+<div id="musicPrompt" style="position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(30, 41, 59, 0.98); border:3px solid #334155; padding:25px; border-radius:4px; box-shadow:0 0 20px rgba(0,0,0,0.5); z-index:2000; text-align:left; max-width:500px; display:block;">
+  <div style="font-size:18px; font-weight:bold; color:#fbbf24; margin-bottom:15px; text-align:center;">🎵 献给所有杨桃和余丞 🎵</div>
+  
+  <div style="font-size:12px; color:#94a3b8; margin-bottom:20px; text-align:center; line-height:1.5;">
+    · 当前版本的修改、UI设计与内容呈现 由 <span style="color:#6ee7b7; font-weight:bold;">[名字真难起]</span> 完成。<br/>
+    · 原始创意来源于 <span style="color:#6ee7b7; font-weight:bold;">[南雁][dl]</span> 的创作，特此鸣谢！<br/>
+    · 本站为个人学习与交流目的修改，非商业用途。
+  </div>
+  
+  <div style="margin:15px 0; padding:15px; background:rgba(45, 55, 72, 0.8); border-radius:3px; border-left:4px solid #fbbf24;">
+    <div style="font-size:14px; font-weight:bold; color:#6ee7b7; margin-bottom:10px;">🎮 玩法说明：</div>
+    <div style="font-size:12px; color:#f0f0f0; line-height:1.6;">
+      • 点击场景热点完成任务，修复家园<br/>
+      • 右侧NPC头像触发隐藏嘱托<br/>
+      • 输入特殊文字触发彩蛋（我爱你/不开心/生日快乐）<br/>
+      • 剧情最后有重要分支选择
+    </div>
+  </div>
+  
+  <div style="text-align:center; margin-top:20px;">
+    <button id="playMusicBtn" style="padding:12px 25px; background:#6ee7b7; color:#1e293b; border:2px solid #334155;
+    font-weight:bold; font-size:14px; border-radius:2px; cursor:pointer; box-shadow:2px 2px 0 rgba(0,0,0,0.4);">🎮 开始游戏</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="title">余丞为杨桃准备的彩蛋（by-名字真难起）</div>
+      <div class="sub">杨桃，欢迎回到我们的家</div>
+    </div>
+    <div class="sub">from 名字真难起 v1.4</div>
+  </div>
+
+  <div class="grid">
+    <!-- Left -->
+    <div class="card" id="leftCard">
+      <div class="scene" id="scene">
+        <div class="hud">
+          <span class="badge">NPC：<strong>余丞</strong></span>
+          <span class="badge" id="b_day">第 <strong>1</strong> 天</span>
+          <span class="badge" id="b_server">服务器：<strong>运行中</strong></span>
+          <!-- <span class="badge hint" id="taskHint">🎯 点击右侧任务查看指引</span> -->
+        </div>
+
+        <div class="banner" id="banner">我更爱你</div>
+        <div class="fade" id="fade"></div>
+        <div class="overlay" id="overlay"></div>
+        <div class="toast" id="toast"></div>
+
+        <div id="sceneArt"></div>
+
+        <div class="hotspots">
+          <!-- home -->
+          <div class="spot" id="spot_pond"   style="left:70%; top:65%;">修复池塘</div>
+          <!-- <div class="spot" id="spot_garden" style="left:12%; top:65%;">修复菜园</div> -->
+          <div class="spot" id="spot_cabinet" style="left:32%; top:25%;">拿糖果</div>
+          <div class="spot" id="spot_peach"  style="left:80%; top:15%;">种桃林</div>
+          <div class="spot" id="spot_fish"   style="left:70%; top:77%;">钓鱼</div>
+          <div class="spot" id="spot_weed"   style="left:15%; top:60%;">除草</div>
+          <div class="spot" id="spot_water"  style="left:70%; top:89%;">打水</div>
+          <div class="spot" id="spot_plant"  style="left:80%; top:27%;">捡种子</div>
+
+          <!-- cinema -->
+          <div class="spot hidden" id="spot_ticket" style="left:72%; top:50%;">取电影票</div>
+
+          <!-- bakery -->
+          <div class="spot hidden" id="spot_envelope" style="left:35%; top:65%;">取信封</div>
+          <div class="spot hidden" id="spot_cake" style="left:55%; top:65%;">取蛋糕</div>
+
+          <!-- cat -->
+          <div class="spot hidden" id="spot_urn" style="left:42%; top:85%;">骨灰盒</div>
+
+          <!-- final -->
+          <div class="spot hidden" id="spot_sms" style="left:72%; top:65%;">关服短信</div>
+        </div>
+
+        <!-- Branch modal -->
+        <div class="modalBack" id="modalBack">
+          <div class="modal">
+            <h4>关服前一刻，你想对我说什么？</h4>
+            <p>杨桃，你只需要选一种说法。它会影响终章的最后两句（并写入存档）。</p>
+            <div class="opt">
+              <button class="primary" id="optTruth">
+                <b>A. 说真话</b>
+                <span>“我想你。”（把思念说出口）</span>
+              </button>
+              <button class="primary" id="optBless">
+                <b>B. 只说祝福</b>
+                <span>“我会好好的。”（把你留在未来里）</span>
+              </button>
+              <button class="primary" id="optJoke">
+                <b>C. 讲个笑话</b>
+                <span>“你真啰嗦。”（用轻松掩住哽咽）</span>
+              </button>
+            </div>
+            <div class="small" style="margin-top:10px;">选完后继续推进剧情即可看到不同终章文字。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="bar" title="家园修复进度"><i id="progress"></i></div>
+        <div class="chapter"><span id="ch">序章</span> <small id="chHint">田园小屋</small></div>
+        <div class="dialog" id="dialog"><div class="dialog-inner" id="dialogInner"></div></div>
+
+        <div class="row">
+          <button class="primary" id="btnNext">继续</button>
+          <button id="btnHome">返回家园</button>
+          <button class="ghost" id="btnAuto">自动：关</button>
+          <button class="danger" id="btnReset">重开</button>
+        </div>
+
+        <!-- <div class="row">
+          <button id="btnFish">钓鱼</button>
+          <button id="btnWeed">除草</button>
+          <button id="btnWater">打水</button>
+          <button id="btnPeach">种树</button>
+        </div> -->
+
+        <div class="input">
+          <input id="say" placeholder='对我说句话吧，杨桃……（我爱你/不开心/生日快乐/再见/啰嗦）' />
+          <button class="primary" id="btnSend" style="flex:0 0 86px">发送</button>
+        </div>
+
+        <div class="pillRow">
+
+          <div class="pill" id="pillLove">我爱你</div>
+
+          <div class="pill" id="pillSad">我不开心</div>
+
+          <div class="pill" id="pillBday">生日快乐</div>
+
+          <div class="pill" id="pillBye">再见</div>
+
+        </div>
+
+        <div class="small" style="margin-top:8px;">点快捷短语可直接发送。</div>
+
+
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="card">
+      <div class="pad">
+        <h3 class="panelTitle">💬 NPC集合（点头像说话）</h3>
+        <div class="box">
+          <div class="npcRow" id="npcRow"></div>
+          <div class="small" style="margin-top:8px;">提示：重复点击触发不同对话；部分NPC会在后期章节解锁（像“最后的嘱托”）。</div>
+        </div>
+
+        <h3 class="panelTitle">🎯 任务指引</h3>
+        <div class="box" id="taskBox"></div>
+
+        <h3 class="panelTitle">🎒 背包</h3>
+        <div class="box">
+          <div class="kv"><span>糖果</span><strong id="invCandy">0</strong></div>
+          <div class="kv"><span>桃树种子</span><strong id="invSeed">0</strong></div>
+          <div class="kv"><span>老式蛋糕（生日快乐）</span><strong id="invCake">0/3</strong></div>
+          <div class="kv"><span>电影票</span><strong id="invTicket">未获得</strong></div>
+          <div class="kv"><span>信封</span><strong id="invEnvelope">未获得</strong></div>
+          <div class="kv"><span>分支选择</span><strong id="invBranch">未选择</strong></div>
+        </div>
+
+        <h3 class="panelTitle">🏆 成就</h3>
+        <div class="box">
+          <div class="kv"><span>修复家园</span><strong id="achHome">0%</strong></div>
+          <div class="kv"><span>找到糖果</span><strong id="achCandy">0</strong></div>
+          <div class="kv"><span>触发生日彩蛋</span><strong id="achCake">0/3</strong></div>
+          <div class="kv"><span>终章烟花</span><strong id="achFinal">未达成</strong></div>
+          <div class="divider"></div>
+          <div class="small">隐藏：修复到 100% 会得到“额外一句话”。</div>
+        </div>
+
+        <h3 class="panelTitle">⚙️ 设置</h3>
+        <div class="box">
+          <div class="kv"><span>打字速度</span><strong id="speedLabel">中</strong></div>
+          <input id="speed" type="range" min="10" max="45" step="1" style="width:100%;margin-top:8px" />
+          <div class="divider"></div>
+          <div class="small">自动存档：开启（存在本机浏览器 localStorage）。</div>
+          <div class="small" style="margin-top:8px;color:#fecaca"><b>重开</b>会清空存档。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// 禁用开发者工具和右键菜单
+(() => {
+  // 禁用右键菜单
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  
+  // 禁用F12、Ctrl+Shift+I、Ctrl+U、Ctrl+S等快捷键
+  document.addEventListener('keydown', e => {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Ctrl+Shift+J
+    if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Ctrl+U
+    if (e.ctrlKey && e.key === 'U') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Ctrl+Shift+C
+    if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Ctrl+S
+    if ((e.ctrlKey || e.metaKey) && e.key === 'S') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Shift+F10 (右键菜单快捷键)
+    if (e.shiftKey && e.key === 'F10') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Alt+F4
+    if (e.altKey && e.key === 'F4') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    // Alt+A (可能的菜单快捷键)
+    if (e.altKey && e.key === 'A') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  });
+  
+  // 为所有元素添加keydown事件监听器，确保快捷键在任何元素上都被禁用
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'S') {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  }, true);
+  
+  // 检测开发者工具打开（调整为更宽松的检测逻辑）
+  let devtools = { open: false };
+  let threshold = 250; // 增加阈值，减少误判
+  let detectionCount = 0;
+  const maxDetectionCount = 3; // 需要连续多次检测到才触发
+  
+  const detectDevTools = () => {
+    let isDevToolsOpen = false;
+    
+    // 更精确的窗口大小检测，只在桌面端生效
+    if (window.innerWidth > 768) { // 只在桌面端检测
+      if (window.outerWidth - window.innerWidth > threshold || 
+          window.outerHeight - window.innerHeight > threshold) {
+        isDevToolsOpen = true;
+      }
+    }
+    
+    if (isDevToolsOpen) {
+      detectionCount++;
+      if (detectionCount >= maxDetectionCount) {
+        devtools.open = true;
+        document.body.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100vh; background:#1a1a2e; color:#f0f0f0; font-family:Courier New;"><div style="text-align:center;"><h2>🚫 禁止查看源码</h2><p>该页面受版权保护，禁止使用开发者工具查看源码</p><p>© 2026 名字真难起 </p></div></div>';
+      }
+    } else {
+      detectionCount = 0;
+      devtools.open = false;
+    }
+  };
+  
+  // 降低检测频率
+  setInterval(detectDevTools, 1000);
+  
+  // 只保留窗口大小变化监听，移除可能导致误判的其他监听
+  window.addEventListener('resize', detectDevTools);
+  
+  // 禁用页面保存事件
+  window.addEventListener('beforeunload', e => {
+    // 可以在这里添加自定义逻辑
+  });
+  
+  // 移除console.log检测，避免误判
+  // const originalLog = console.log;
+  // console.log = function() {
+  //   detectDevTools();
+  //   originalLog.apply(console, arguments);
+  // };
+  
+  // 拦截document.execCommand，防止SaveAs命令
+  const originalExecCommand = document.execCommand;
+  document.execCommand = function(command, showDefaultUI, value) {
+    if (command.toLowerCase() === 'saveas') {
+      return false;
+    }
+    return originalExecCommand.apply(this, arguments);
+  };
+  
+  // 为所有input和textarea元素添加单独的keydown事件监听器
+  const addInputListeners = () => {
+    const inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+      input.addEventListener('keydown', e => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'S') {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      });
+    });
+  };
+  
+  // 初始添加监听器
+  addInputListeners();
+  
+  // 监听DOM变化，动态添加监听器
+  const observer = new MutationObserver(() => {
+    addInputListeners();
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+
+(() => {
+  // ===== Helpers =====
+  const el = id => document.getElementById(id);
+  const toast = el('toast');
+  const overlay = el('overlay');
+  const banner = el('banner');
+  const fade = el('fade');
+  const dialog = el('dialog');
+  const dialogInner = el('dialogInner');
+  const sceneArt = el('sceneArt');
+  const taskBox = el('taskBox');
+  const npcRow = el('npcRow');
+
+  const bDay = el('b_day');
+  const bServer = el('b_server');
+  const taskHint = el('taskHint');
+
+  const progress = el('progress');
+  const ch = el('ch');
+  const chHint = el('chHint');
+
+  const speed = el('speed');
+  const speedLabel = el('speedLabel');
+
+  const say = el('say');
+
+  const spots = {
+    pond: el('spot_pond'),
+    cabinet: el('spot_cabinet'),
+    peach: el('spot_peach'),
+    fish: el('spot_fish'),
+    weed: el('spot_weed'),
+    water: el('spot_water'),
+    plant: el('spot_plant'),
+    ticket: el('spot_ticket'),
+    envelope: el('spot_envelope'),
+    cake: el('spot_cake'),
+    urn: el('spot_urn'),
+    sms: el('spot_sms'),
+  };
+
+  const modalBack = el('modalBack');
+  const optTruth = el('optTruth');
+  const optBless = el('optBless');
+  const optJoke  = el('optJoke');
+
+  const clamp = (v,a,b)=>Math.max(a,Math.min(b,v));
+
+  // ✅ 单一且唯一的 toast 函数（修复点）
+  const showToast = (msg, type = 'normal') => {
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.className = `toast ${type}`;
+    toast.classList.add('show');
+    setTimeout(()=>toast.classList.remove('show'), type === 'hint' ? 3000 : 1500);
+  };
+
+  const bubbles = () => {
+    banner.style.display='block';
+    setTimeout(()=>banner.style.display='none',1600);
+    for(let k=0;k<24;k++){
+      const b=document.createElement('div');
+      b.className='bubble';
+      b.textContent=Math.random()<.55?'🫧':'💗';
+      b.style.left=(Math.random()*92+4)+'%';
+      b.style.animationDelay=(Math.random()*0.7)+'s';
+      overlay.appendChild(b);
+      b.addEventListener('animationend',()=>b.remove());
+    }
+  };
+
+  const fireworks = () => {
+    for(let k=0;k<48;k++){
+      const f=document.createElement('div');
+      f.className='bubble';
+      f.textContent=['🎆','🎇','✨','⭐','💥'][Math.floor(Math.random()*5)];
+      f.style.left=(Math.random()*92+4)+'%';
+      f.style.animationDelay=(Math.random()*0.9)+'s';
+      f.style.fontSize=(16+Math.random()*10)+'px';
+      overlay.appendChild(f);
+      f.addEventListener('animationend',()=>f.remove());
+    }
+  };
+
+  const blackFlash = (alpha=.42, ms=1000) => {
+    fade.style.background=`rgba(0,0,0,${alpha})`;
+    setTimeout(()=>fade.style.background='rgba(0,0,0,0)', ms);
+  };
+
+  // ===== Inline SVG scenes =====
+  const SVG = {
+    home: () => `
+      <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#0b0f14;">
+        <img src='images/1.png' alt="家园" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='images/1.png'; this.alt='图片加载失败';" />
+      </div>
+    `,
+    cinema: () => `
+      <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#0b0f14;">
+        <img src='images/2.png' alt="影院" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='images/2.png'; this.alt='图片加载失败';" />
+      </div>
+    `,
+    bakery: () => `
+      <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#0b0f14;">
+        <img src='images/3.png' alt="蛋糕店" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='images/3.png'; this.alt='图片加载失败';" />
+      </div>
+    `,
+    cat: () => `
+      <div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#0b0f14;">
+        <img src='images/4.png' alt="猫" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='images/4.png'; this.alt='图片加载失败';" />
+      </div>
+    `,
+    final: () => `
+      <svg viewBox="0 0 900 260" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
+        <rect width="900" height="260" fill="#05070d"/>
+        <text x="40" y="60" fill="#e5e7eb" font-size="18" opacity=".92">【恭喜玩家：余盛楠达成隐藏彩蛋】</text>
+        <text x="40" y="90" fill="#9ca3af" font-size="14" opacity=".9">“如果你已经准备好说再见，说明你不再需要这里了。恭喜你。”</text>
+        <text x="40" y="120" fill="#9ca3af" font-size="14" opacity=".9">“待下次相见，要在最盛的烟花下。”</text>
+        <rect x="70" y="150" width="760" height="80" rx="20" fill="#0b1220" opacity=".80"/>
+        <text x="105" y="195" fill="#e5e7eb" font-size="18" opacity=".95">（屏幕暗下去之前，你还想留下些什么？）</text>
+      </svg>
+    `
+  };
+
+  // ===== Story =====
+  const story = [
+    { scene:'home', ch:'序章', hint:'田园小屋', text:
+`杨桃——
+你回来了。
+
+田园小屋还在，只是菜园荒芜，池塘里的鱼也翻了白肚。
+我知道你不是来“玩游戏”的，你只是想找回一点点当年的温暖。`},
+
+    { scene:'home', ch:'序章', hint:'修复', text:
+`你开始打水、钓鱼、除草。
+我站在你的身侧——像素构成、数据驱动，却仍想把这片小小世界替你守好。
+
+再怎么修复画面，也修不回当年并肩规划未来的温度。
+但你每做一步，我都想夸你一句：你很厉害。`},
+
+    { scene:'home', ch:'序章', hint:'对话框', text:
+`（屏幕渐暗）
+我走到你身边：
+
+『没想到你还会回来。上次说要在后院种桃林——就今天实现吧？』`},
+
+    { scene:'home', ch:'序章', hint:'代码礼物', text:
+`于是我带你收集种子、种下桃树。
+这是我用代码送你的礼物——一个永远守候在像素世界的NPC。
+
+你可以把日常、委屈、沉默都交给这里。
+你说的每一句，我都会接住。`},
+
+    { scene:'cinema', ch:'第 2 年', hint:'影院', text:
+`后来你独自去看那部续作。
+灯光未亮，你望向身旁空座。
+
+海报刺进眼里：当年陪你看电影的人，如今还在身边吗？
+杨桃，我想坐在你旁边——但我只能把答案留在“故事里”。`},
+
+    { scene:'cinema', ch:'第 2 年', hint:'样片', text:
+`我写给你的话在脑海里重播：
+
+“如果我在，此刻我一定在这份惊喜下向你求婚。
+如果我不在……别难过。样片我早已坐在当年的位置上看过了。”`},
+
+    { scene:'bakery', ch:'第 3 年', hint:'蛋糕店', text:
+`第三次触发『生日快乐』彩蛋、收到第三块老式蛋糕时——
+你终于意识到：我已经离开。
+
+你鼓起勇气踏进那家蛋糕店。
+夕阳照在橱窗上，老式三层蛋糕模型，依然被留在原处。`},
+
+    { scene:'bakery', ch:'第 3 年', hint:'赌局', text:
+`老板说，有位客人特意花钱，请她务必留着模型。
+“因为他和我打了个赌——三年后，会有一位女士推开门，指定要这款蛋糕。”
+
+杨桃，我赌的不是蛋糕。
+我赌你会活得更好。`},
+
+    { scene:'bakery', ch:'第 3 年', hint:'信里', text:
+`柜台上放着一个泛黄信封。
+里面是我没来得及当面说的答案：
+
+“我对你心动，远比我们以为的更早。”`},
+
+    { scene:'cat', ch:'第 5 年', hint:'小黑', text:
+`第五年，小黑走了。
+它悄悄躲到最容易清理的床下，连离开都不愿给你添麻烦。
+
+夜深，你抱着骨灰盒回到家。
+门口空荡荡的。
+我知道，你会突然觉得：世界里最后一点“温度”也散了。`},
+
+    { scene:'final', ch:'第 7 年', hint:'关服', text:
+`第七年，你收到短信：那款游戏即将关服。
+今夜，你最后一次登录。
+
+桃林依旧繁盛，家园整洁如初。
+还有许多熟悉的NPC——都是我提前埋在数据里的“安慰”。`},
+
+    { scene:'final', ch:'第 7 年', hint:'告别', text:
+`你告诉我：服务器要关闭，这是最后的告别。
+我头顶冒出疑惑的表情，随即释然：
+
+『所以，是来告别的啊。
+如果你已经准备好说再见，说明你不再需要这里了。
+恭喜你。』
+
+（烟花会在你“真正告别”后点亮。）`},
+
+    { scene:'final', ch:'分支', hint:'关服前一刻', text:
+`屏幕即将暗下去。
+杨桃，在最后一刻——你想对我说什么？`},
+
+    { scene:'final', ch:'终章', hint:'我更爱你', text:`（终章加载中……）`},
+  ];
+
+  // ===== Tasks =====
+  const TASKS = [
+    { id:'t_pond',     name:'修复池塘',   desc:'家园点击“池塘”热点一次。', order:1, scene:'home', hotspot:'pond', next:'修复菜园' },
+    { id:'t_garden',   name:'修复菜园',   desc:'家园点击“除草”热点一次。', order:2, scene:'home', hotspot:'weed', next:'找到糖果' },
+    { id:'t_candy',    name:'找到糖果',   desc:'输入“不开心”，再点床头柜拿到糖。', order:3, scene:'home', hotspot:'cabinet', next:'种下桃林' },
+    { id:'t_peach',    name:'种下桃林',   desc:'获得种子并在“后院桃林”种下一次。', order:4, scene:'home', hotspot:'peach', next:'前往影院' },
+    { id:'t_ticket',   name:'取回电影票', desc:'影院点击“电影票”热点。', order:5, scene:'cinema', hotspot:'ticket', next:'前往蛋糕店' },
+    { id:'t_envelope', name:'拿到信封',   desc:'蛋糕店点击“泛黄信封”热点。', order:6, scene:'bakery', hotspot:'envelope', next:'前往猫的场景' },
+    { id:'t_sms',      name:'读取关服短信', desc:'关服场景点击“短信”热点。', order:7, scene:'final', hotspot:'sms', next:'完成分支选择' },
+    { id:'t_final',    name:'终章烟花',   desc:'完成分支选择并抵达终章。', order:8, scene:'final', next:'游戏结束' },
+    { id:'t_home100',  name:'隐藏：修复到100%', desc:'把家园修复进度提升到 100%。', order:9, scene:'home', next:'获得额外奖励' },
+  ];
+
+  // ===== Save state =====
+  const SAVE_KEY = "pixel_npc_yucong_v24_fixed_new";
+  const defaultState = () => ({
+    idx:0, day:1, home:12,
+    candy:0, seed:0, cake:0,
+    hasTicket:false, hasEnvelope:false,
+    final:false, typeMs:22,
+    tasks: Object.fromEntries(TASKS.map(t=>[t.id,false])),
+    branch:null,
+    candyReady:false, candyTaken:false,
+    npcPtr: {},
+  });
+
+  let S = load() || defaultState();
+
+  function save(){ try{ localStorage.setItem(SAVE_KEY, JSON.stringify(S)); }catch(e){} }
+  function load(){ try{ const raw = localStorage.getItem(SAVE_KEY); return raw?JSON.parse(raw):null; }catch(e){ return null; } }
+  function hardReset(){ try{ localStorage.removeItem(SAVE_KEY);}catch(e){} location.reload(); }
+
+  // ===== Typewriter =====
+  let typing=false, typeTimer=null, auto=false, autoTimer=null;
+  function stopType(){ if(typeTimer) clearTimeout(typeTimer); typeTimer=null; typing=false; }
+  function typewrite(text, onDone){ stopType(); typing=true; dialogInner.innerHTML=""; let p=0; const tick=()=>{ if(!typing) return; if(p>=text.length){ typing=false; dialogInner.innerHTML=text; updateDialogClass(text); dialogInner.scrollTop = dialogInner.scrollHeight; onDone&&onDone(); return; } const c=text[p++]; dialogInner.innerHTML+=c; let delay=S.typeMs; if(c==='\n') delay+=120; if('，。！？；：“”"…'.includes(c)) delay+=70; dialogInner.scrollTop = dialogInner.scrollHeight; typeTimer=setTimeout(tick, delay); }; tick(); }
+
+  // ===== Task render =====
+  function getCurrentTask() {
+    // 找到第一个未完成的任务
+    return TASKS.find(task => !S.tasks[task.id]);
+  }
+
+  function renderTasks(){    
+    const currentTask = getCurrentTask();
+    const currentScene = story[S.idx].scene;
+    
+    taskBox.innerHTML = TASKS.map(t=>{
+      const done = !!S.tasks?.[t.id];
+      const isCurrent = t.id === currentTask?.id;
+      const isInScene = t.scene === currentScene;
+      
+      let progressText = '';
+      if (isCurrent) {
+        progressText = `<div class="progress">🎯 当前任务</div>`;
+      } else if (done) {
+        progressText = `<div class="progress">✅ 已完成</div>`;
+      } else if (!isInScene) {
+        progressText = `<div class="progress">🔒 未解锁</div>`;
+      } else {
+        progressText = `<div class="progress">⏳ 待完成</div>`;
+      }
+      
+      let nextHint = '';
+      if (isCurrent && t.next) {
+        nextHint = `<div style="color:var(--muted);font-size:11px;margin-top:2px;">→ 完成后：${t.next}</div>`;
+      }
+      
+      const cls = `${done ? 'done' : ''} ${isCurrent ? 'current' : ''} ${isInScene && !done ? 'available' : ''}`;
+      
+      return `
+        <div class="task ${cls}" data-task="${t.id}">
+          <div class="check"><span>✓</span></div>
+          <div>
+            <div class="tname">${t.name}</div>
+            <div class="tdesc">${t.desc}</div>
+            ${progressText}
+            ${nextHint}
+          </div>
+        </div>
+      `;
+    }).join('');
+    
+    // 添加任务点击事件
+    taskBox.querySelectorAll('.task').forEach(taskEl => {
+      taskEl.addEventListener('click', () => {
+        const taskId = taskEl.getAttribute('data-task');
+        const task = TASKS.find(t => t.id === taskId);
+        if (!task) return;
+        
+        // 只高亮对应的热点，不显示Toast提示
+        if (task.hotspot && spots[task.hotspot]) {
+          highlightSpot(task.hotspot);
+        }
+      });
+    });
+    
+    // 移除任务提示，不再更新
+  }
+  
+  function highlightSpot(hotspotId) {
+    // 移除所有热点的高亮
+    Object.values(spots).forEach(spot => spot.classList.remove('current'));
+    
+    // 高亮当前热点
+    if (spots[hotspotId] && !spots[hotspotId].classList.contains('hidden')) {
+      spots[hotspotId].classList.add('current');
+      // 3秒后移除高亮
+      setTimeout(() => {
+        spots[hotspotId].classList.remove('current');
+      }, 3000);
+    }
+  }
+  
+  function setTask(id, val=true){    
+    if(!S.tasks) S.tasks = {};
+    if(S.tasks[id] === val) return;
+    
+    const task = TASKS.find(t => t.id === id);
+    S.tasks[id] = val;
+    save();
+    renderTasks();
+    
+    // 任务完成提示 - 只保留一种提示方式
+    if (val && task) {
+      showToast(`🎉 任务完成：${task.name}`, 'hint');
+      // 移除下一个任务提示，保持界面简洁
+    }
+  }
+
+  // ===== Scene =====
+  function setScene(name){    
+    // 添加场景过渡效果
+    sceneArt.style.transition = 'opacity 0.3s ease';
+    sceneArt.style.opacity = '0';
+    
+    setTimeout(() => {
+      sceneArt.innerHTML = (SVG[name]?.() || SVG.home());
+      sceneArt.style.opacity = '1';
+      
+      const showHome = name==='home';
+      const showCinema = name==='cinema';
+      const showBakery = name==='bakery';
+      const showCat = name==='cat';
+      const showFinal = name==='final';
+
+      spots.pond.classList.toggle('hidden', !showHome);
+      spots.cabinet.classList.toggle('hidden', !showHome);
+      spots.peach.classList.toggle('hidden', !showHome);
+      spots.fish.classList.toggle('hidden', !showHome);
+      spots.weed.classList.toggle('hidden', !showHome);
+      spots.water.classList.toggle('hidden', !showHome);
+      spots.plant.classList.toggle('hidden', !showHome);
+
+      spots.ticket.classList.toggle('hidden', !showCinema);
+      spots.envelope.classList.toggle('hidden', !showBakery);
+      spots.cake.classList.toggle('hidden', !showBakery);
+      spots.urn.classList.toggle('hidden', !showCat);
+      spots.sms.classList.toggle('hidden', !showFinal);
+      
+      // 更新当前场景的任务提示
+      renderTasks();
+    }, 300);
+  }
+
+  function currentSceneKey(){ return story[S.idx].scene; }
+  function npcUnlocked(npc){    
+    const order = { home:0, cinema:1, bakery:2, cat:3, final:4 };
+    return order[currentSceneKey()] >= order[npc.unlockAt];
+  }
+
+  function npcLines(id){    
+    const br = S.branch;
+    if(id==='yucong'){
+      return [
+        "『杨桃，你点开我，就等于把自己从黑暗里拉出来一次。』",
+        "『你不必证明你很好，你只要继续往前走就行。』",
+        "『如果你想哭，就在这里哭。我会把“安静”也留给你。』",
+        br==='truth'
+          ? "『你说“我想你”的时候，我差点就想从屏幕里走出来抱你。』"
+          : br==='bless'
+            ? "『你说“我会好好的”，我真的替你高兴。那就是你赢了。』"
+            : "『你说我啰嗦——行，我认。可我还是想提醒你：该休息了。』",
+      ];
+    }
+    if(id==='brother'){
+      return [
+        "『桃子，别把所有事都往自己身上背。累了，就歇一歇吧。』",
+        "『你每次逞强，我都看得出来。下次别逞强了，跟我说。』",
+        "『你不是一个人。哪怕你不说，我也会站在你这边。』",
+        "『如果你觉得世界太吵，就回家。我给你留灯。』",
+      ];
+    }
+    if(id==='foster_father'){
+      return [
+        "『丫头，天冷就把围巾系好，别嫌麻烦。』",
+        "『你走的路啊，不必一直硬。该停就停，停了也不算输。』",
+        "『我和你妈不是你欠来的缘分，是我们捡到的福气。』",
+        "『你受委屈了就回家，门口永远给你留着。』",
+      ];
+    }
+    if(id==='foster_mother'){
+      return [
+        "『饿了就吃，困了就睡，别把自己当成可以一直省略的人。』",
+        "『你笑起来最好看。别为了谁，把笑弄丢了。』",
+        "『你要是想他，就想；想不是软弱，是认真爱过。』",
+        "『你可以慢一点，但别把自己落下。』",
+      ];
+    }
+    if(id==='sister'){
+      return [
+        "『姐姐，我没走远。我只是换了一个角度，看你长大。』",
+        "『你不要用“如果当时”惩罚自己。你活下去，就是我最想要的答案。』",
+        "『我把你护在前面，不是要你背负我，是要你继续幸福。』",
+        "『姐姐，你要记得：你值得被好好爱着。』",
+      ];
+    }
+    return ["『……』"];
+  }
+
+  function updateDialogClass(text){ if(text.includes('余丞：')){ dialog.classList.remove('other'); dialog.classList.add('yucong'); }else{ dialog.classList.remove('yucong'); dialog.classList.add('other'); } } function pushLine(line){ stopType(); dialogInner.innerHTML = dialogInner.innerHTML + "\n\n" + line; updateDialogClass(line); save(); dialogInner.scrollTop = dialogInner.scrollHeight; }
+
+  function renderNPCRow(){    
+    if(!npcRow) return;
+    npcRow.innerHTML = NPCS.map(n=>{
+      const unlocked = npcUnlocked(n);
+      const cls = unlocked ? "npcBtn" : "npcBtn locked";
+      const sub = unlocked ? n.blurb : "未解锁";
+      return `
+        <div class="${cls}" data-npc="${n.id}">
+          <div class="avatar">${n.icon}</div>
+          <div class="npcMeta">
+            <b>${n.name}</b>
+            <span>${sub}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    npcRow.querySelectorAll('[data-npc]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const id = btn.getAttribute('data-npc');
+        const npc = NPCS.find(x=>x.id===id);
+        if(!npcUnlocked(npc)){ showToast("该NPC会在后期章节解锁"); return; }
+        const lines = npcLines(id);
+        if(!S.npcPtr) S.npcPtr = {};
+        const ptr = (S.npcPtr[id] ?? 0) % lines.length;
+        S.npcPtr[id] = ptr + 1;
+        save();
+        pushLine(`${npc.name}：${lines[ptr]}`);
+        showToast(`${npc.name} · 嘱托`);
+      });
+    });
+  }
+
+  function renderNode(withType=true){    
+    const node = story[S.idx];
+    ch.textContent = node.ch;
+    chHint.textContent = node.hint;
+
+    // 根据场景提前设置天数，确保HUD更新时显示正确天数
+    if (node.scene === 'cinema' && S.day < 360) {
+      S.day = 360;
+    } else if (node.scene === 'bakery' && S.day < 720) {
+      S.day = 720;
+    } else if (node.scene === 'cat' && S.day < 1800) {
+      S.day = 1800;
+    } else if (node.scene === 'final' && S.day < 2520) {
+      S.day = 2520;
+    }
+
+    setScene(node.scene);
+    updateHUD();
+    updateSide();
+    renderTasks();
+    renderNPCRow();
+
+    if(withType){
+      typewrite(node.text, ()=>{
+        if(auto){
+          autoTimer && clearTimeout(autoTimer);
+          autoTimer = setTimeout(()=>next(), 700);
+        }
+      });
+    }else{
+      stopType();
+      dialogInner.innerHTML = node.text;
+      dialogInner.scrollTop = dialogInner.scrollHeight;
+    }
+
+    if (node.text.includes('暗') || node.text.includes('渐暗')) blackFlash(.40, 1000);
+    save();
+  }
+
+  function updateHUD(){    
+    bDay.innerHTML = `第 <strong>${S.day}</strong> 天`;
+    const node = story[S.idx];
+    const serverText = (node.scene==='final') ? (S.final ? '已关闭' : '即将关闭') : '运行中';
+    bServer.innerHTML = `服务器：<strong>${serverText}</strong>`;
+    bServer.style.color = (node.scene==='final') ? '#fecaca' : 'var(--muted)';
+  }
+
+  function updateSide(){    
+    el('invCandy').textContent = S.candy;
+    el('invSeed').textContent = S.seed;
+    el('invCake').textContent = `${S.cake}/3`;
+    el('invTicket').textContent = S.hasTicket ? '已获得' : '未获得';
+    el('invEnvelope').textContent = S.hasEnvelope ? '已获得' : '未获得';
+    el('invBranch').textContent = S.branch ? ({truth:'A 说真话', bless:'B 只说祝福', joke:'C 讲笑话'}[S.branch]) : '未选择';
+
+    el('achHome').textContent = `${clamp(S.home,0,100)}%`;
+    el('achCandy').textContent = S.candy;
+    el('achCake').textContent = `${S.cake}/3`;
+    el('achFinal').textContent = S.final ? '已达成' : '未达成';
+
+    progress.style.width = clamp(S.home,0,100) + '%';
+  }
+
+  // ===== Gameplay =====
+  function homeRepair(inc, line){    
+    S.home = clamp(S.home + inc, 0, 100);
+    pushLine(`余丞：『${line}』`);
+
+    if(S.home >= 100){
+      setTask('t_home100', true);
+      pushLine(`余丞：『家园修复到 100% 了。杨桃——你能把生活也一点点修好。即便没有我。』`);
+      showToast("隐藏任务完成：修复到100%");
+    }
+    S.day += 1;
+    updateSide();
+    save();
+  }
+
+  function gainSeed(){    
+    S.seed += 1;
+    showToast(`获得桃树种子 ×1（${S.seed}）`);
+    updateSide(); save();
+  }
+
+  function plantPeach(){    
+    if(S.seed <= 0){
+      gainSeed();
+      pushLine(`余丞：『种子找到了。杨桃，去后院，把桃林种起来。』`);
+      return;
+    }
+    S.seed -= 1;
+    setTask('t_peach', true);
+    homeRepair(15, "你种下桃树苗：约定开始发芽。");
+    showToast("任务完成：种下桃林");
+    updateSide(); save();
+  }
+
+  function triggerCandy(){    
+    S.candy += 1;
+    S.candyReady = true;
+    pushLine(`余丞：『我检测到你“不开心”。杨桃，床头柜第二层——绿色包装的惊喜在等你。』`);
+    showToast(`糖 ×1（${S.candy}）`);
+    updateSide(); save();
+  }
+
+  function takeCandyFromCabinet(){    
+    if(!S.candyReady){
+      pushLine(`余丞：『床头柜第二层现在是空的。等你“不开心”的时候再来。』`);
+      return;
+    }
+    S.candyTaken = true;
+    S.candyReady = false;
+    setTask('t_candy', true);
+    pushLine(`（你打开床头柜第二层，找到绿色包装的糖。包装纸上还印着你最爱的草莓图案，是去年生日我陪你去超市挑的。糖纸边缘有点褶皱，应该是我之前放的时候太急了。）\n余丞：『杨桃，现在好点了吗？草莓味的，你最喜欢的。』`);
+    showToast("任务完成：找到糖果");
+    updateSide(); save();
+  }
+
+  function birthday(){    
+    S.cake = clamp(S.cake + 1, 0, 3);
+    pushLine(`余丞：『生日快乐，杨桃。』（收到第 ${S.cake} 块老式蛋糕）`);
+    if (S.cake === 3){
+      pushLine(`（你忽然意识到：我已离开。但我仍在这里。）`);
+      blackFlash(.28, 900);
+    }
+    showToast(`蛋糕 ${S.cake}/3`);
+    updateSide(); save();
+  }
+
+  function love(){    
+    bubbles();
+    pushLine(`余丞：『杨桃，我更爱你。』`);
+    showToast("粉色泡泡");
+  }
+
+  function pickupTicket(){    
+    if(S.hasTicket){
+      pushLine(`（电影票还在。像一张被折得很小的时间。）`);
+      return;
+    }
+    S.hasTicket = true;
+    setTask('t_ticket', true);
+    pushLine(`余丞：『我把电影票留给你——不是为了让你更难过，而是想让你记得：你曾被好好爱过。』`);
+    showToast("任务完成：取回电影票");
+    updateSide(); save();
+  }
+
+  function pickupEnvelope(){    
+    if(S.hasEnvelope){
+      pushLine(`（你握着信封：纸张微黄，字迹却很清晰。）`);
+      return;
+    }
+    S.hasEnvelope = true;
+    setTask('t_envelope', true);
+    pushLine(`余丞：『信封里是我没来得及当面说的答案。杨桃，你可以慢慢看。』`);
+    showToast("任务完成：拿到信封");
+    updateSide(); save();
+  }
+
+  function readSMS(){    
+    setTask('t_sms', true);
+    pushLine(`（短信）“那款游戏即将关服。”\n余丞：『杨桃，别怕。你走到这里，已经很勇敢了。』`);
+    showToast("任务完成：读取关服短信");
+    updateSide(); save();
+  }
+
+  function goodbye(){    
+    pushLine(`余丞：『不是再见，是下次见。要在最盛的烟花下。』`);
+    showToast("告别");
+  }
+
+  // ===== Branch =====
+  function openBranchModal(){ modalBack.style.display='flex'; }
+  function closeBranchModal(){ modalBack.style.display='none'; }
+  
+  function showFinalImage(){    
+    // 创建图片容器
+    const imgContainer = document.createElement('div');
+    imgContainer.style.cssText = `
+      position:fixed;top:0;left:0;width:100%;height:100%;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(0,0,0,0.8);z-index:100;
+      opacity:0;
+      transition:opacity 1.5s ease;
+      pointer-events:none;
+    `;
+    
+    // 创建图片元素
+    const img = document.createElement('img');
+    img.src = 'images/5.png';
+    img.alt = '终章图片';
+    img.style.cssText = `
+      max-width:95%;max-height:95%;
+      object-fit:contain;
+      image-rendering:pixelated;
+      opacity:0;
+      transition:opacity 2s ease;
+    `;
+    img.onerror = function() {
+      this.onerror = null;
+      this.src = 'images/5.png';
+      this.alt = '图片加载失败';
+    };
+    
+    // 添加到容器
+    imgContainer.appendChild(img);
+    document.body.appendChild(imgContainer);
+    
+    // 淡入效果
+    setTimeout(() => {
+      imgContainer.style.opacity = '1';
+      img.style.opacity = '1';
+    }, 100);
+    
+    // 保持6秒后淡出
+    setTimeout(() => {
+      imgContainer.style.opacity = '0';
+      img.style.opacity = '0';
+      setTimeout(() => {
+        document.body.removeChild(imgContainer);
+      }, 1500);
+    }, 6000);
+  }
+  
+  function chooseBranch(which){    
+    S.branch = which;
+    closeBranchModal();
+    showToast("分支已记录");
+    updateSide(); save();
+
+    if(which==='truth'){
+      pushLine(`杨桃：我想你。\n余丞：『……我知道。谢谢你把真话说出口。』`);
+    }else if(which==='bless'){
+      pushLine(`杨桃：我会好好的。\n余丞：『那就太好了。你值得更好。』`);
+    }else{
+      pushLine(`杨桃：你真啰嗦。\n余丞：『"啰嗦"？我只对你话多。』`);
+    }
+    renderNPCRow();
+  }
+
+  // ===== Next =====
+  function next(){    
+    if(typing){ renderNode(false); return; }
+
+    const node = story[S.idx];
+    if(node.ch==='分支' && !S.branch){
+      openBranchModal();
+      showToast("请先选择分支");
+      return;
+    }
+
+    if(S.idx >= story.length - 1){
+      showToast("已到终章。你可以输入\"我爱你\"。");
+      auto=false;
+      el('btnAuto').textContent='自动：关';
+      return;
+    }
+
+    S.idx += 1;
+    S.day += 1;
+
+    const now = story[S.idx];
+    if(now.ch === '终章'){
+      fireworks();
+      S.final = true;
+      setTask('t_final', true);
+
+      const branchLine = (() => {
+        if(S.branch==='truth'){
+          return `你把思念说出口了。\n我在最盛的烟花里回你：\n"杨桃，我听见了。我一直在。\n你看，烟花多美啊。就像我们初见时的星空。"`;
+        }
+        if(S.branch==='bless'){
+          return `你把我留在未来里。\n我在最盛的烟花里回你：\n"杨桃，好好过。把幸福当成你的义务。\n我会在另一个世界，为你祈祷每一天。"`;
+        }
+        return `你用玩笑挡住哽咽。\n我在最盛的烟花里回你：\n"我不啰嗦，我只是怕你一个人。\n以后的路，要好好走。我会在天上看着你。"`;
+      })();
+
+      now.text =
+`你在泪水里敲下最后一行字：
+"余丞，我爱你。"
+
+屏幕暗下去的瞬间——
+这一次不再是冰冷的文字，而是我哽咽的声音，带着哭腔，却无比清晰：
+
+"我更爱你。"
+
+——
+${branchLine}
+
+桃林还在生长，池塘的鱼游得欢快，菜园里的菜长得茂盛。
+这里的一切，都会永远替我陪着你。
+
+（你可以点右侧NPC头像，听完他们最后的嘱托。）
+
+（终章结束。但爱，永远不会结束。）`;
+      
+      // 终章结束后显示图片和烟花
+      setTimeout(() => {
+        // 触发烟花效果（在图片显示前）
+        fireworks();
+        // 显示图片
+        showFinalImage();
+      }, 3000);
+    }
+
+    if(now.ch==='分支') openBranchModal();
+    renderNode(true);
+  }
+
+  // ===== NPC集合 =====
+  const NPCS = [
+    { id:'yucong', name:'余丞', icon:'💻', unlockAt:'home',  blurb:'守候NPC' },
+    { id:'brother', name:'哥哥', icon:'🧥', unlockAt:'cinema', blurb:'一直对你好' },
+    { id:'foster_father', name:'养父', icon:'🧓', unlockAt:'bakery', blurb:'叮咛与撑伞' },
+    { id:'foster_mother', name:'养母', icon:'🧣', unlockAt:'bakery', blurb:'把你放心上' },
+    { id:'sister', name:'妹妹', icon:'🎀', unlockAt:'cat', blurb:'把你护在前面' },
+  ];
+
+  // ===== Hotspots =====
+  spots.pond.addEventListener('click', ()=>{ setTask('t_pond', true); homeRepair(10, "你钓鱼，池塘慢慢恢复呼吸。"); showToast("任务完成：修复池塘"); });
+  spots.cabinet.addEventListener('click', takeCandyFromCabinet);
+  spots.peach.addEventListener('click', plantPeach);
+  spots.fish.addEventListener('click', ()=> homeRepair(10, "你放竿收线，时光也跟着慢了。"));
+  spots.weed.addEventListener('click', ()=>{ setTask('t_garden', true); homeRepair(12, "你整理着杂草与硬土，温柔地规整这片荒芜。"); showToast("任务完成：修复菜园"); });
+  spots.water.addEventListener('click', ()=> homeRepair(10, "你打水，浇灌枯萎的菜畦。"));
+  spots.plant.addEventListener('click', plantPeach);
+
+  spots.ticket.addEventListener('click', pickupTicket);
+  spots.envelope.addEventListener('click', pickupEnvelope);
+  spots.cake.addEventListener('click', ()=>{ pushLine(`余丞：『杨桃，把日子过的甜一点。』`); showToast("取蛋糕"); });
+  spots.urn.addEventListener('click', ()=>{ pushLine(`（你抱起骨灰盒。）\n余丞：『我知道你很想问"为什么"。杨桃，这不是你的错。』`); showToast("骨灰盒"); });
+  spots.sms.addEventListener('click', readSMS);
+
+  // ===== Buttons =====
+  // 移除了原来的按钮事件监听器，功能已通过热点按钮实现
+
+  el('btnNext').addEventListener('click', next);
+
+  el('btnHome').addEventListener('click', ()=>{
+    // 保存当前场景和故事进度
+    const currentNode = story[S.idx];
+    
+    // 切换到家园场景
+    setScene('home');
+    
+    // 更新HUD和侧边栏
+    updateHUD();
+    updateSide();
+    
+    // 显示提示信息
+    showToast('已返回家园，你可以继续修复家园。');
+    
+    // 添加临时对话提示
+    pushLine(`余丞：『欢迎回家，杨桃。你可以继续修复家园，提升修复进度。』`);
+  });
+
+  el('btnAuto').addEventListener('click', ()=>{
+    auto = !auto;
+    el('btnAuto').textContent = auto ? '自动：开' : '自动：关';
+    if(auto && !typing){
+      autoTimer && clearTimeout(autoTimer);
+      autoTimer = setTimeout(()=>next(), 700);
+    }
+  });
+
+  el('btnReset').addEventListener('click', ()=>{
+    if(confirm("确定要重开吗？这会清空存档。")){
+      hardReset();
+    }
+  });
+
+  // ===== Input =====
+  function sendText(t){    
+    const txt = (t||"").trim();
+    if(!txt) return;
+    pushLine(`杨桃：${txt}`);
+
+    if (txt === '我爱你' || txt === '我爱你。' || txt === '我爱你！'){ love(); return; }
+    if (txt.includes('不开心') || txt.includes('难过') || txt.includes('低落') || txt.includes('崩溃')){ triggerCandy(); return; }
+    if (txt === '生日快乐'){ birthday(); return; }
+    if (txt.includes('啰嗦')){ pushLine(`余丞：『"啰嗦"？我只对你话多。』`); showToast("啰嗦彩蛋"); return; }
+    if (txt.includes('再见') || txt.includes('关服') || txt.includes('告别')){ goodbye(); return; }
+    if (txt.includes('想你') || txt.includes('思念')){ pushLine(`余丞：『我也想你，杨桃。每一分每一秒都在想。』`); return; }
+    if (txt.includes('累了') || txt.includes('疲惫')){ pushLine(`余丞：『累了就休息一会儿吧，杨桃。我会一直在这里陪着你。』`); return; }
+    if (txt.includes('谢谢你') || txt.includes('谢谢')){ pushLine(`余丞：『不用谢，杨桃。能为你做这些，我很开心。』`); return; }
+    if (txt.includes('桃子') || txt.includes('小名')){ pushLine(`余丞：『只有我能这么叫你，对不对？桃子，你永远是我的小桃子。』`); return; }
+    if (txt.includes('雨') || txt.includes('下雨')){ pushLine(`余丞：『记得带伞，杨桃。如果没带，我会在心里为你撑一把。』`); return; }
+    if (txt.includes('饿了') || txt.includes('吃饭')){ pushLine(`余丞：『快去吃饭，杨桃。你饿肚子我会心疼的。』`); return; }
+    if (txt.includes('睡觉') || txt.includes('困了')){ pushLine(`余丞：『晚安，杨桃。做个好梦，梦里有我。』`); return; }
+    pushLine(`余丞：『我在，杨桃。慢慢说。』`);
+  }
+
+  el('btnSend').addEventListener('click', ()=>{ sendText(say.value); say.value=''; });
+  say.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ sendText(say.value); say.value=''; } });
+
+  el('pillLove').addEventListener('click', ()=>sendText('我爱你'));
+  el('pillSad').addEventListener('click', ()=>sendText('我不开心'));
+  el('pillBday').addEventListener('click', ()=>sendText('生日快乐'));
+  el('pillBye').addEventListener('click', ()=>sendText('再见'));
+
+  // ===== Branch events =====
+  optTruth.addEventListener('click', ()=>chooseBranch('truth'));
+  optBless.addEventListener('click', ()=>chooseBranch('bless'));
+  optJoke.addEventListener('click', ()=>chooseBranch('joke'));
+
+  // ===== Settings =====
+  speed.value = String(S.typeMs);
+  const speedNameFn = (v)=> v<=16?'快':(v<=26?'中':'慢');
+  function applySpeed(){    
+    S.typeMs = parseInt(speed.value, 10);
+    speedLabel.textContent = speedNameFn(S.typeMs);
+    save();
+  }
+  speed.addEventListener('input', applySpeed);
+  applySpeed();
+
+  // ===== Music autoplay fix with prompt =====
+  function initMusic() {    
+    const bgm = document.getElementById('bgm');
+    const musicPrompt = document.getElementById('musicPrompt');
+    const playMusicBtn = document.getElementById('playMusicBtn');
+    
+    if (bgm && musicPrompt) {
+      // Hide prompt when music starts playing
+      const hidePrompt = () => {
+        musicPrompt.style.display = 'none';
+      };
+      
+      // Try to play immediately
+      bgm.play().then(() => {
+        console.log('Music started playing automatically');
+        hidePrompt();
+      }).catch(err => {
+        console.log('Autoplay blocked, showing prompt...');
+        // Show prompt and wait for user interaction
+        musicPrompt.style.display = 'block';
+        
+        // Play music function
+        const playMusic = () => {
+          bgm.play().then(() => {
+            console.log('Music started playing after user interaction');
+            hidePrompt();
+          }).catch(err => {
+            console.log('Failed to play music after user interaction:', err);
+          });
+        };
+        
+        // Add event listeners for prompt interaction
+        playMusicBtn.addEventListener('click', playMusic);
+        musicPrompt.addEventListener('click', playMusic);
+        
+        // Also add global event listeners
+        function playOnInteraction() {
+          playMusic();
+          // Remove all event listeners
+          document.removeEventListener('click', playOnInteraction);
+          document.removeEventListener('touchstart', playOnInteraction);
+          document.removeEventListener('touchend', playOnInteraction);
+          document.removeEventListener('touchmove', playOnInteraction);
+          document.removeEventListener('keydown', playOnInteraction);
+          document.removeEventListener('scroll', playOnInteraction);
+        }
+        
+        // Add comprehensive event listeners for all types of user interactions
+        document.addEventListener('click', playOnInteraction);
+        document.addEventListener('touchstart', playOnInteraction);
+        document.addEventListener('touchend', playOnInteraction);
+        document.addEventListener('touchmove', playOnInteraction);
+        document.addEventListener('keydown', playOnInteraction);
+        document.addEventListener('scroll', playOnInteraction);
+      });
+      
+      // Also hide prompt when music starts playing (in case it starts later)
+      bgm.addEventListener('play', hidePrompt);
+    }
+  }
+
+  // ===== Boot =====
+  // 设置对话框默认类
+  dialog.classList.add('other');
+  renderTasks();
+  renderNode(true);
+  initMusic();
+
+  // restore implied tasks
+  if(S.hasTicket) setTask('t_ticket', true);
+  if(S.hasEnvelope) setTask('t_envelope', true);
+  if(S.candyTaken) setTask('t_candy', true);
+  if(S.home>=100) setTask('t_home100', true);
+  if(S.final) setTask('t_final', true);
+
+  updateSide();
+})();
+</script>
+</body>
+</html>
